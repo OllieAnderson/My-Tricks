@@ -1,27 +1,32 @@
 
 * {
-    background-color: blue;
+    background-color: #1111;
     margin: 0px;
-    color: white;
+    color: black;
     font-family: Arial;
     
 }
 
 
 header {
-    height: 15vw;
-    background-color: green;
+    height: 13vw;
+    background-color: rgb(31, 29, 29);
     display: grid;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    color: white;
+    border: 2px solid blue
 }
 
 
 logo {
     grid-row-start: 1;
     grid-row-end: 2;
-    padding: 1vw;
+    padding: 2vw;
     font-size: 5vw;
     background-color: inherit;
+    color: inherit;
+    
+
 }
 
 
@@ -30,16 +35,22 @@ header nav {
     grid-row-end: 3;
     display: flex;
     background-color: inherit;
+    color: inherit;
+
 }
 
 
 
 header nav div {
-    padding: 0px 1vw;
-    margin: 0px 1vw;
+    padding: 10px;
+    margin: 0px 0vw;
     background-color: inherit;
     font-weight: bold;
     text-align: center;
+    display: flex;
+    align-items: baseline;
+    color: inherit;
+
     
     
 }
@@ -52,27 +63,30 @@ header nav div:hover {
 section {
     display: grid;
     grid-template-columns: 1fr 12fr 1fr;
+    background-color: rgb(110, 110, 110);
     /* grid-template-rows: repeat(6, 1fr); */
    
 }
 
 section * {
-    margin: 5px;
-    border: 5px solid white;
+    margin: 15px;
+    padding: 2px 5px;
+    border: 3px solid white;
     grid-column-start: 2;
+    background-color: rgb(211, 210, 210);
 }
 
 section h1 {
     
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     
 
 }
 
 section p {
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
     padding: 1vw;
     padding-bottom: 3vw;
     font-size: 1.2em;
@@ -80,4 +94,6 @@ section p {
 
 .table-of-contents * {
     list-style: none;
+    border: none;
+   
 }
