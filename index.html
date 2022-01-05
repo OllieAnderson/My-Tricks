@@ -12,7 +12,7 @@
             margin: 0px;
         }
 
-        .container {
+        .site {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
 
@@ -23,7 +23,7 @@
         }
 
         .nav {
-            /* display: grid; */
+            display: grid;
             grid-column-start: start;
             grid-column-end: end;
         }
@@ -31,30 +31,27 @@
         .item {
             border: 5px solid green
         }
+
+        .nav li {
+            color: white;
+        }
+
+
     </style>
 
 </head>
 <body>
-    <div class="container">
-        <div class="nav"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+    <div class="site">
+        <div class="nav">
+            <ul>
+                <li>ARTICLES</li>
+                <li>VIDEOS</li>
+                <li>ALMANAC</li>
+                <li>NEWSLETTER</li>
+                <li>GUIDES</li>
+                <LI>BOOKS</LI>
+            </ul>
+        </div>
         
     </div>
 </body>
