@@ -3,15 +3,15 @@
     background-color: blue;
     margin: 0px;
     color: white;
+    font-family: Arial;
     
 }
 
 
 header {
-    height: 20vw;
+    height: 15vw;
     background-color: green;
     display: grid;
-    /* grid-template-columns: repeat(6, 1fr); */
     grid-template-rows: 1fr 1fr ;
 }
 
@@ -28,8 +28,6 @@ logo {
 header nav {
     grid-row-start: 2;
     grid-row-end: 3;
-    
-    
     display: flex;
     background-color: inherit;
 }
@@ -37,11 +35,18 @@ header nav {
 
 
 header nav div {
-    padding: 1vw;
-    margin: 1vw;
-    border: 5px solid red;
+    padding: 0px 1vw;
+    margin: 0px 1vw;
     background-color: inherit;
+    font-weight: bold;
+    text-align: center;
     
+    
+}
+
+header nav div:hover {
+    background-color: grey;
+
 }
 
 section {
