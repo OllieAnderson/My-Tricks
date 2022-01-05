@@ -2,7 +2,7 @@
 * {
     background-color: #1111;
     margin: 0px;
-    color: black;
+    color: grey;
     font-family: Arial;
     
 }
@@ -25,8 +25,13 @@ logo {
     font-size: 5vw;
     background-color: inherit;
     color: inherit;
-    
 
+}
+
+img {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 40px;
 }
 
 
@@ -63,17 +68,22 @@ header nav div:hover {
 section {
     display: grid;
     grid-template-columns: 1fr 12fr 1fr;
-    background-color: rgb(110, 110, 110);
+    background-color: rgb(78, 75, 75, 0);
+    background: linear-gradient(to left, rgb(54, 54, 54) 28px, rgb(80, 80, 80) 50%, rgb(51, 51, 51));
+    /* background-image: radial-gradient(circle, #474747 0%, #808080 100%); */
     /* grid-template-rows: repeat(6, 1fr); */
    
 }
 
+
 section * {
     margin: 15px;
-    padding: 2px 5px;
-    border: 3px solid white;
+    
+    /* border: 3px solid white; */
     grid-column-start: 2;
-    background-color: rgb(211, 210, 210);
+    /* background-color: rgb(211, 210, 210, 0); */
+    color: white;
+    background-color: inherit;
 }
 
 section h1 {
