@@ -4,47 +4,61 @@
     margin: 0px;
     color: white;
     font-family: Arial;
-    
+    padding: 0;
+    text-decoration: none; 
+
 }
 
-a {
-    text-decoration: none; /* no underline */
-  }
+ul {
+  
+    list-style: none;
+
+
+}
+
+body {
+    background: linear-gradient(to left, rgb(54, 54, 54) 28px, rgb(80, 80, 80) 50%, rgb(51, 51, 51));
+
+}
+
 
 
 header {
     height: 13vw;
-    background-color: rgb(31, 29, 29);
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     color: white;
-    border: 2px solid blue
+    border: 2px solid blue;
+    background-color: rgba(0, 0, 0, 70%);
+    background-image: url("images/splatter.jpg");
+    background-blend-mode: overlay;
+
 }
 
 
 logo {
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     padding: 2vw;
     font-size: 5vw;
     background-color: inherit;
     color: inherit;
 
+
 }
 
-img {
-    grid-row-start: 1;
-    grid-row-end: 2;
+logo img {
     height: 40px;
 }
 
 
 header nav {
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
     display: flex;
-    background-color: inherit;
+    background-color: none;
     color: inherit;
+   
 
 }
 
@@ -52,7 +66,7 @@ header nav {
 header nav div {
     padding: 10px;
     margin: 0px 0vw;
-    background-color: inherit;
+    /* background-color: inherit; */
     font-weight: bold;
     text-align: center;
     display: flex;
@@ -64,24 +78,44 @@ header nav div {
 
 header nav div:hover {
     background-color: grey;
+    color: rgba(248, 36, 36, 0.685);
+    border-radius: 5px 5px 0px 0px;
 
 }
 
 
-section {
+intro {
     display: flex;
     flex-direction: column;
     background-color: rgb(78, 75, 75, 0);
-    background: linear-gradient(to left, rgb(54, 54, 54) 28px, rgb(80, 80, 80) 50%, rgb(51, 51, 51));
 
    
 }
 
 
-section * {
+intro * {
     margin: 15px;
     color: white;
     background-color: inherit;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+    background-color: beige;
+    color: black;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+section * {
+    color: black;
+    background-color: beige;
+}
+
+section > * {
+    padding: 20px;
 }
 
 
@@ -116,9 +150,72 @@ section p {
     font-size: 1.2em;
 }
 
+.table-of-contents {
+    background-color: beige;
+}
 
 .table-of-contents * {
-    list-style: none;
     border: none;
+    padding: 1px;
+    background-color: beige;
+    color: black;
+
+}
+
+.table-of-contents ol {
+    padding-left: 20px;
+    margin: 10px;
+}
+
+advert {
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.image {
+    height: 300px;
+}
+
+
+button {
+    background-color: green;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 16px 16px 38px 16px;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
    
+
+}
+
+button:hover {
+    background-color: rgb(75, 129, 75);
+}
+
+
+footer {
+    height: 300px;
+    padding: 30px;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    background-color: rgba(0, 0, 0, 70%);
+    background-image: url("images/splatter.jpg");
+    background-blend-mode: overlay;
+    
+
+}
+
+.link-grid {
+    grid-row-start: 2;
+    display: flex;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.link-grid * {
+    margin: 5px;
 }
