@@ -2,10 +2,14 @@
 * {
     background-color: #1111;
     margin: 0px;
-    color: grey;
+    color: white;
     font-family: Arial;
     
 }
+
+a {
+    text-decoration: none; /* no underline */
+  }
 
 
 header {
@@ -45,7 +49,6 @@ header nav {
 }
 
 
-
 header nav div {
     padding: 10px;
     margin: 0px 0vw;
@@ -56,51 +59,63 @@ header nav div {
     align-items: baseline;
     color: inherit;
 
-    
-    
 }
+
 
 header nav div:hover {
     background-color: grey;
 
 }
 
+
 section {
-    display: grid;
-    grid-template-columns: 1fr 12fr 1fr;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(78, 75, 75, 0);
     background: linear-gradient(to left, rgb(54, 54, 54) 28px, rgb(80, 80, 80) 50%, rgb(51, 51, 51));
-    /* background-image: radial-gradient(circle, #474747 0%, #808080 100%); */
-    /* grid-template-rows: repeat(6, 1fr); */
+
    
 }
 
 
 section * {
     margin: 15px;
-    
-    /* border: 3px solid white; */
-    grid-column-start: 2;
-    /* background-color: rgb(211, 210, 210, 0); */
     color: white;
     background-color: inherit;
 }
 
-section h1 {
-    
-    grid-row-start: 1;
-    grid-row-end: 2;
-    
 
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    font-size: .9rem;   
+    margin-left: 15px;
 }
 
+.breadcrumbs * {
+    margin: 3px;
+    
+}
+
+.breadcrumb-separator {
+    font-size: 1.5rem;
+    color: grey
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-top: 0%;
+}
+
+
 section p {
-    grid-row-start: 2;
-    grid-row-end: 3;
     padding: 1vw;
     padding-bottom: 3vw;
     font-size: 1.2em;
 }
+
 
 .table-of-contents * {
     list-style: none;
