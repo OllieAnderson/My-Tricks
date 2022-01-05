@@ -10,52 +10,58 @@
         * {
             background-color: blue;
             margin: 0px;
+            color: white;
+            
         }
 
-        .container {
+        header {
+            height: 20vw;
+            background-color: green;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-
-            /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-            grid-template-rows: 100px auto;
-
-            height: 100vw;
+            /* grid-template-columns: repeat(6, 1fr); */
+            grid-template-rows: 1fr 1fr ;
         }
 
-        .nav {
-            /* display: grid; */
-            grid-column-start: start;
-            grid-column-end: end;
+        header nav {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            
+            
+            display: flex;
+            background-color: inherit;
         }
 
-        .item {
-            border: 5px solid green
+        logo {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            padding: 1vw;
+            font-size: 5vw;
+            background-color: inherit;
         }
+
+        header nav div {
+            padding: 1vw;
+            margin: 1vw;
+            border: 5px solid red;
+            background-color: inherit;
+            
+        }
+
+     
     </style>
 
 </head>
 <body>
-    <div class="container">
-        <div class="nav"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        
-    </div>
+    <header>
+        <logo>My Tricks</logo>
+        <nav>
+            <div>ARTICLES</div>
+            <div>VIDEOS</div>
+            <div>ALMANAC</div>
+            <div>NEWSLETTER</div>
+            <div>GUIDES</div>
+            <div>BOOKS</div>
+        </nav>
+    </header>
 </body>
 </html>
